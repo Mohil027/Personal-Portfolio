@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('/Users/mohilkhimani/Desktop/portfolio/src/index.css');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	width: 100%;
+	min-height: 100vh;
+	background-color: var(--color-footer);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container{
+	width: 100%;
+	padding: 35px 10%;
+}
+.container{
+	padding-right: calc(10% - 30px);
+}
+main.row{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 20px;
+}
+.col header.title{
+	font-family: var(--font-family);
+	background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	padding: 0px 0px 20px 30px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20px;
+}
+.col .contents{
+	padding: 0px 30px;
+	border-left: 2px solid #81afdd;
+	
+}
+.col .contents .box{
+	position: relative;
+	padding: 20px;
+	border: 1px solid rgb(12, 63, 80);
+	background-color: rgba(1, 9, 27, 0.89);
+	cursor: pointer;
+	transition: all 0.4s;
+	margin-bottom: 20px;
+    border-radius: 5px 5px 5px 5px;
+    /* border: none; */
+}
+.col .contents .box:hover{
+	box-shadow: 0px 3px 12px 0px #ccc;
+	border: 1px solid transparent;
+}
+.col .contents .box::before{
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	right: calc(100% + 22px);
+	top: 0;
+	background-color: rgba(2, 27, 129, 0.977);
+	border: 2px solid rgba(255, 255, 255, 0.618);
+}
+.box h4{
+	position: relative;
+	color: #ffffff80;
+    font-family: var(--font-family);
+}
+.box h3{
+	font-size: 19px;
+	padding: 10px 0px 6px;
+	font-family: var(--font-family);
+	background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.box p{
+	line-height: 1.2;
+	color: #81afdd;
+	/* background-color: #81afdd; */
+    font-family: var(--font-family);
+
+	font-size: 17px;
+}
+@media(max-width: 768px){
+	main.row{
+		grid-template-columns: 1fr;
+	}
+	.row .col:nth-child(2){
+		margin-top: 30px;
+	}
+}

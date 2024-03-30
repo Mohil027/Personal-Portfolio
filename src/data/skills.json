@@ -1,0 +1,30 @@
+[
+    {
+      "title": "HTML",
+      "imageSrc": "/Users/mohilkhimani/Desktop/portfolio/src/assets/skills/html.png"
+    },
+    {
+      "title": "CSS",
+      "imageSrc": "/Users/mohilkhimani/Desktop/portfolio/src/assets/skills/css.png"
+    },
+    {
+      "title": "React",
+      "imageSrc": "/Users/mohilkhimani/Desktop/portfolio/src/assets/skills/react.png"
+    },
+    {
+      "title": "Node",
+      "imageSrc": "/Users/mohilkhimani/Desktop/portfolio/src/assets/skills/node.png"
+    },
+    {
+      "title": "GraphQL",
+      "imageSrc": "/Users/mohilkhimani/Desktop/portfolio/src/assets/skills/graphql.png"
+    },
+    {
+      "title": "MongoDB",
+      "imageSrc": "/Users/mohilkhimani/Desktop/portfolio/src/assets/skills/mongodb.png"
+    },
+    {
+      "title": "Figma",
+      "imageSrc": "/Users/mohilkhimani/Desktop/portfolio/src/assets/skills/figma.png"
+    }
+  ]

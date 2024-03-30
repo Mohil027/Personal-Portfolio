@@ -1,0 +1,304 @@
+.features-container {
+    padding: 40px;
+  }
+.features-container h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    font-family: var(--font-family);
+    /* color: #FFF; */
+    padding: 10px 10px;
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	padding: 0px 0px 20px 30px;
+}
+  
+.horizontal-tabs {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  margin-bottom: 20px;
+  background-color: none;
+  color: #FFF;
+  width: 50%;
+  margin: 0 auto; /* Center horizontally */
+
+  
+}
+  
+  .tab {
+    flex: 1.5;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+    transition: background-color 0.3s ease;
+    background-color: rgba(1, 9, 27, 0.89);
+  }
+  .tab p {
+    font-family: var(--font-family);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  
+  .tab:hover {
+    background-color: rgba(130, 2, 222, 0.593);
+  }
+  
+  .tab.active {
+    background-color: rgba(222, 2, 174, 0.422);
+    color: #fff;
+    /* border: 1px solid rgb(188, 188, 188); */
+  }
+
+
+  .card {
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+     /* Add perspective for 3D effect */
+  }
+  
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+    margin-bottom: 10px;
+    padding-top: 20px;
+  }
+  
+  .card {
+    width: calc(33.33% - 10px); /* Adjust spacing between cards */
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    
+  }
+  
+  .card .card-buttons {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .card .card-buttons button {
+    padding: 8px 16px;
+  }
+  
+  .card .card-buttons .description-button {
+    position: absolute;
+    left: 10px;
+  }
+  
+  .card .card-buttons .github-button {
+    position: relative; /* Change to relative */
+    text-align: right; /* Align button text to the right */
+  }
+  
+  @media (max-width: 850px) {
+    .card-row {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .card {
+      width: calc(50% - 10px); /* Two cards per row on smaller screens */
+    }
+  
+    .card .card-buttons .description-button,
+    .card .card-buttons .github-button {
+      position: relative;
+      width: 50%; /* Make buttons take up 50% of card width */
+    }
+  }
+
+  @media (max-width: 550px) {
+    .card-row {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .card {
+      width: calc(100% - 10px); /* Two cards per row on smaller screens */
+    }
+  
+    .card .card-buttons .description-button,
+    .card .card-buttons .github-button {
+      position: relative;
+      width: 50%; /* Make buttons take up 50% of card width */
+    }
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s; /* Add transition for smooth flipping animation */
+    transform-style: preserve-3d; /* Maintain 3D position of front and back sides */
+  }
+  
+  .card.is-flipped .card-inner {
+    transform: rotateY(180deg); /* Flip the card to show the back side */
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the back face of the card during flip */
+  }
+  
+  .card-front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(1, 9, 27, 0.89); 
+    border: 1px solid transparent;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+    
+  }
+  /* .card-front{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.369);
+    box-shadow: 0 4px 24px 0 rgba(31, 38, 135, 0);
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba(130, 2, 222, 0.593);
+    } */
+
+  .card-front p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--font-family);
+    font-size: 20px; /* Front side background color */
+    margin-top: 4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+  }
+  /* background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+  
+  /* .card-back {
+    
+    transform: rotateY(180deg); 
+    
+    background-color: rgba(1, 9, 27, 0.89);
+    border-radius: 5px 5px 5px 5px;
+  } */
+  .card-back {
+    
+    transform: rotateY(180deg); 
+    
+    background: rgba(0, 213, 255, 0.068);
+    box-shadow: 0 4px 24px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba(12, 63, 80, 0.891);
+  } 
+
+  
+  
+  .card-back .card-description{
+    color: #FFF;
+  }
+  .card .card-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    padding: 10px;
+    /* border: 1px solid #854CE6; */
+    border-radius: 20px;
+  }
+  
+  .card-image {
+    width: 80%;
+    height: auto;
+    margin-bottom: 30px;
+    
+  }
+  
+  .card-buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card-button {
+    position: relative;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 2px solid rgb(12, 63, 80); /* Initially set border color to transparent */
+    background-color: var(--color-footer);
+    color: #FFF;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-weight: 500;
+    overflow: hidden; /* Hide overflowing gradient animation */
+    border-radius: 25px;
+  }
+  
+  .card-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+    border: 2px solid transparent; /* Initially set border color to transparent */
+    transition: width 0.2s, border-color 0.2s; /* Animation duration */
+    /* color: #FFF; */
+  }
+  .card-button:hover {
+    color: #FFF !important; /* Set text color to white on hover */
+  }
+  
+  .card-button:hover::before {
+    width: 100%; /* Expand the pseudo-element width on hover */
+    background-color: rgba(1, 9, 27, 0.89) /* Change the border color on hover */
+    
+  }
+  
+  .card-description {
+    font-size: 16px;
+    text-align: center;
+    margin: 20px;
+  }

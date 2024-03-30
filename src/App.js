@@ -10,14 +10,25 @@ const App = () => {
       <div className='gradient__bg'>
         <Navbar />
         <Header />
+         <WhatGPT3 />
+         <Features />
+         <Possibility />
+         <Blog />
+        
 
       </div>
-      <Brand />
-      <WhatGPT3 />
-      <Features />
-      <Possibility />
-      <CTA />
-      <Blog />
+      <div className='gradient__bg'>
+        
+       
+      </div>
+      {/* <Brand /> */}
+      <div className='gradient__bg'>
+        
+      </div>
+      
+      
+      
+      
       <Footer />
 
     </div>
