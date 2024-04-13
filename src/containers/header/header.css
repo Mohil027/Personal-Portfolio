@@ -29,14 +29,15 @@
 
 }
 .gpt3__header-content__input {
-    width: 100%;
+    width: 60%;
     margin: 2rem 0 1rem;
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
 
 
 }
-.gpt3__header-content__input input{
+/* .gpt3__header-content__input input{
     flex: 2;
     width: 100%;
     min-height: 50px;
@@ -53,12 +54,17 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 
-}
+} */
 .gpt3__header-content__input button{
-    flex: 0.6;
+    flex: 0.4;
     width: 100%;
     min-height: 50px;
-    background: #FF4820;
+    background: rgba(3, 112, 155, 0.369);
+    
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba(130, 2, 222, 0.593);
     /* border-radius: 5px 0px 0px 5px; */
     font-family: var(--font-family);
     font-weight: bold;
@@ -69,9 +75,26 @@
     outline: none;
     padding: 0 1rem;
     border: none;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-radius: 10px;
 }
+.gpt3__header-content__input button:hover {
+    /* color: red !important;  */
+    /* border: 1px solid rgba(130, 2, 222, 0.676); */
+    transition: width 0.5s, border-color 0.5s; 
+    background: rgba(3, 112, 155, 0.815);
+    /* border-color: rgb(140, 0, 255); */
+  }
+.card-front{
+    display: flex;
+    
+
+    background: rgba(0, 0, 0, 0.369);
+    
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba(130, 2, 222, 0.593);
+    }
 .gpt3__header-content__people {
     width: 100%;
     display: flex;
@@ -79,12 +102,12 @@
     align-items: center;
     margin-top: 2rem;
 }
-.gpt3__header-content__people img {
+/* .gpt3__header-content__people img {
     width: 181.79px;
     height: 38px;
     
-}
-.gpt3__header-content__people p {
+} */
+/* .gpt3__header-content__people p {
     font-family: var(--font-family);
     margin: 0 0 0 1rem;
     font-weight: 500;
@@ -92,9 +115,24 @@
     line-height: 38px;
     color: #FFFFFF;
     text-align: center;
+  
+} */
+.gpt3__header-content__people .iconinner {
    
-    
-}
+        width: 45px;
+        height: 45px;
+        border: 2px solid dodgerblue;
+        border-radius: 50%;
+        margin-right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        cursor: pointer;
+        padding: 0.5rem;
+      /* Ensure the inner icon takes full height */
+  }
+  
 .gpt3__header-image{
     flex: 1;
     display: flex;
@@ -102,17 +140,33 @@
     align-items: center;
 
 }
-.gpt3__header-image img{
+.gpt3__header-image img {
     width: 100%;
     height: 100%;
-    
+
+    /* filter: brightness(80%);  */
+    transition: filter 0.5s ease; /* Smooth transition for the filter */
+    /* border-radius: 50%; */
+    /* -webkit-mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); */
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 90%); /* Fading mask from top to bottom */
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 90%);
+    filter: grayscale(0%) brightness(85%);
+
 }
+/* .gpt3__header-image:hover img {
+    filter: grayscale(100%) brightness(70%);/* Adjust values as needed */
+/* } */ 
+
 @media screen and (max-width: 1050px) {
     .gpt3__header{
         flex-direction: column;
     }
     .gpt3__header-content{
         margin: 0 0 3rem;
+    }
+    .gpt3__header-image img{
+        display: none;
     }
 }
 @media screen and (max-width: 650px) {
@@ -125,7 +179,7 @@
         line-height: 24px;
     }
     .gpt3__header-content__people{
-        flex-direction: column;
+        flex-direction: row;
     }
     .gpt3__header-content__people p{
         margin: 0;

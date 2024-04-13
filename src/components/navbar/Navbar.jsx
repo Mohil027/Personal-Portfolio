@@ -30,7 +30,9 @@ const Navbar = () => {
       </div> 
       <div className='gpt3__navbar-sign'>
         {/* <p> Sign In </p> */}
-        <button type='button'> Resume</button>
+        <a href="https://drive.google.com/file/d/1ax305RDdGgimAMPZwTQJ49pK_2q0MUDk/view?usp=sharing" target="_blank">
+            <button type='button'>Resume</button>
+        </a>
 
       </div>  
       <div className='gpt3__navbar-menu'>
@@ -44,7 +46,9 @@ const Navbar = () => {
               <Menu />
               <div className='gpt3__navbar-menu_container-links-sign'>
                 {/* <p> Sign In </p> */}
-                <button type='button'> Resume</button>
+                <a href="https://www.google.com" target="_blank">
+                    <button type='button'>Resume</button>
+                </a>
 
             </div> 
             </div>

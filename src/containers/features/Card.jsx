@@ -26,8 +26,9 @@ const Card = ({ projectName, imageUrl, description, githubLink }) => {
         
         {/* Back side of the card */}
         <div className="card-back" onClick={isFlipped ? handleFlip : undefined}>
-          <p className="card-description">{description}</p>
-          <button onClick={handleFlip} className="card-button">Back</button>
+          <div className="card-description" dangerouslySetInnerHTML={{ __html: description }}></div>
+
+          <button onClick={handleFlip} className="card-back-button">Back</button>
         </div>
       </div>
     </div>
