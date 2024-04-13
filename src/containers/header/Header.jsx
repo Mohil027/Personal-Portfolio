@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './header.css';
 import people from '../../assets/gpt3/Group 81.png';
-import ai from '/Users/mohilkhimani/Desktop/portfolio/src/assets/profile/4.png';
+import ai from '../../assets/profile/4.png';
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const Header = () => {

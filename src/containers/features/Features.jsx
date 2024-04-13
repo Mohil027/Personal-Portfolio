@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './features.css';
-import Card from '/Users/mohilkhimani/Desktop/portfolio/src/containers/features/Card.jsx'; // Import the Card component from its file
-import img from "/Users/mohilkhimani/Desktop/portfolio/src/assets/gpt3/Rectangle 22-2.png"
-import img2 from "/Users/mohilkhimani/Desktop/portfolio/src/assets/gpt3/Rectangle 22.png"
-import img3 from "/Users/mohilkhimani/Desktop/portfolio/src/assets/gpt3/Rectangle 22-4.png"
+import Card from '../../containers/features/Card.jsx'; // Import the Card component from its file
+import img from "../../assets/gpt3/Rectangle 22-2.png"
+import img2 from "../../assets/gpt3/Rectangle 22.png"
+import img3 from "../../assets/gpt3/Rectangle 22-4.png"
 
 const Features = () => {
   const [activeTab, setActiveTab] = useState('section1'); // State to manage active tab

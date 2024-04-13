@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaGithub } from 'react-icons/fa';
-import '/Users/mohilkhimani/Desktop/portfolio/src/containers/features/features.css'; // Import your CSS file for styling
+import '../../containers/features/features.css'; // Import your CSS file for styling
 
 const Card = ({ projectName, imageUrl, description, githubLink }) => {
   const [isFlipped, setIsFlipped] = useState(false);

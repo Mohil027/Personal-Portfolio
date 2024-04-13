@@ -16,7 +16,7 @@ const SkillCube = () => {
       <boxGeometry args={[5, 5, 5]} />
       <meshStandardMaterial attachArray="material" color="white" /> {/* Set default material for all sides */}
       {[0, 1, 2, 3, 4, 5].map((index) => ( // Create textures for each side
-        <meshStandardMaterial key={index} attachArray="material" map={new TextureLoader().load('/Users/mohilkhimani/Desktop/portfolio/src/assets/skills/node.png')} />
+        <meshStandardMaterial key={index} attachArray="material" map={new TextureLoader().load('../../assets/skills/node.png')} />
       ))}
     </mesh>
   );

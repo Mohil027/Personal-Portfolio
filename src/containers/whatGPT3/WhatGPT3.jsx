@@ -1,10 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import styles from './whatGPT3.css';
-import whatgpt3 from '../../assets/gpt3/What is GPT-3.png'
-import skills from "../../data/skills.json";
-import history from "../../data/history.json";
-import { getImageUrl } from "../../utils";
-import img from '../../assets/skills/figma.png'
+import './whatGPT3.css';
 
 const WhatGPT3 = () => {
     const [modalContent, setModalContent] = useState(null);

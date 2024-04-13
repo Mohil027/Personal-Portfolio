@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { skills } from '/Users/mohilkhimani/Desktop/portfolio/src/components/data/skills.js'
+import { skills } from '../../components/data/skills.js'
 import './possibility.css';
-// import SkillCubeScene from '/Users/mohilkhimani/Desktop/portfolio/src/containers/possibility/Cube.jsx'; // Adjust the path as per your project structure
 
 const Container = styled.div`
 display: flex;
