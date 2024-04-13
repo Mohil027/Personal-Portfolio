@@ -104,6 +104,10 @@
     
 }
 @media screen and (max-width: 550px){
+    .gpt3__navbar-links_logo img {
+        width: 80px;
+        height: 48px;
+    }
     .gpt3__navbar{
         padding: 2rem
     }

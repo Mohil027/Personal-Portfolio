@@ -49,7 +49,7 @@ const Header = () => {
         <div className='gpt3__header-content__input'>
           {/* <input type="email" placeholder='Your Email Address'/> */}
           {/* <button type='button'>Hire me</button> */}
-          <a href="mailto:your_email@example.com">
+          <a href="mohil.khimani@gmail.com">
               <button type="button">Hire me</button>
           </a>
 
@@ -57,10 +57,14 @@ const Header = () => {
         <div className='gpt3__header-content__people'>
           {/* <img src={people} alt='people' />
           <p>1,600 people requested access a visit in last 24 hours</p> */}
-          <FaGithub className='iconinner'/>
+          {/* <FaGithub href='https://github.com/Mohil027'className='iconinner'/>
           <FaLinkedin className='iconinner'/>
           <FaTwitter className='iconinner'/>
-          <FaInstagram className='iconinner'/>
+          <FaInstagram className='iconinner'/> */}
+          <a href="https://github.com/Mohil027"><FaGithub className='iconinner'/></a>
+          <a href="https://www.linkedin.com/in/mohil-khimani-77510716a/"><FaLinkedin className='iconinner'/></a>
+          <a href="https://twitter.com/example"><FaTwitter className='iconinner'/></a>
+          <a href="https://instagram.com/example"><FaInstagram className='iconinner'/></a>
         </div>
         
 
