@@ -49,7 +49,7 @@ const Header = () => {
         <div className='gpt3__header-content__input'>
           {/* <input type="email" placeholder='Your Email Address'/> */}
           {/* <button type='button'>Hire me</button> */}
-          <a href="mohil.khimani@gmail.com">
+          <a href="mailto:mohil.khimani@gmail.com">
               <button type="button">Hire me</button>
           </a>
 
