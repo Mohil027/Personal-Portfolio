@@ -13,7 +13,7 @@ const Blog = () => {
           {/* Title Starts */}
           <div className="contactTitle">
             <h2>Get In Touch</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+            {/* <p></p> */}
           </div>
           {/* Title Ends */}
 
