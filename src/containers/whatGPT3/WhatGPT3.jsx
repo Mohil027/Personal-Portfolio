@@ -258,7 +258,7 @@ const WhatGPT3 = () => {
                                 May 22 - Aug 22
                             </span>
                         </div>
-                        <p>Description</p>
+                        <p>Developed responsive full-stack website, optimized backend, reduced downtime.</p>
                         <ul class="content-skills">
                             <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=flat-square&logo=javascript&logoColor=%23F7DF1E"/>
                             <img src="https://img.shields.io/badge/AWS-%23FF9900.svg?style=flat-square&logo=amazon-aws&logoColor=white"/>
